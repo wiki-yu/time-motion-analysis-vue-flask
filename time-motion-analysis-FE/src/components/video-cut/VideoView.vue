@@ -103,7 +103,7 @@ export default {
       // this.$refs.video.src = source
       // sending file to backend
       axios
-        .post('http://localhost:4000/uploadVideo', formData)
+        .post('http://localhost:3000/uploadVideo', formData)
         .then(res => {
           console.log("res.status:..........", res.status)
           if (res.status === 200){
